@@ -4,9 +4,9 @@ def call(env)
   time = Time.now
   resp = Rack::Response.new
 
-  if t.hour < Time.parse('12:00:00')
+  if t.hour < 12
     resp.write "Good Morning"
-  elsif Time.parse('12:00:00') < time
+  else
     resp.write "Good Afternoon"
   end
   resp.finish

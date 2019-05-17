@@ -5,9 +5,9 @@ def call
 
   resp = Rack::Response.new
 
-  if time < Time.parse('12:00:00 +0100')
+  if time < Time.parse('12:00:00')
     resp.write "Good Morning"
-  elsif 12:00 < time < 24:00
+  elsif Time.parse('12:00:00') < time < Time.parse('24:00:00')
     resp.write "Good Afternoon"
   end
   resp.finish

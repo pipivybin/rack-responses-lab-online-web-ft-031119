@@ -2,7 +2,6 @@ class Application
 
 def call(env)
   time = Time.now
-
   resp = Rack::Response.new
 
   if time < Time.parse('12:00:00')

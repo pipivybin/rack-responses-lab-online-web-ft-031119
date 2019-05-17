@@ -7,7 +7,7 @@ def call
 
   if time < 12:00
     resp.write "Good Morning"
-  elsif 24:00 < time < 12:00
+  elsif 12:00 < time < 24:00
     resp.write "Good Afternoon"
   end
   resp.finish

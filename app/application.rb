@@ -1,7 +1,7 @@
 class Application
 
-def greeting
-  
+def call
+
 end
 
 end

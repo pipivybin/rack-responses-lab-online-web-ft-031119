@@ -9,7 +9,8 @@ def call
     resp.write "Good Morning"
   elsif 12 pm < time < 6pm
     resp.write "Good Afternoon"
-
+  end
+  resp.finish
 end
 
 end

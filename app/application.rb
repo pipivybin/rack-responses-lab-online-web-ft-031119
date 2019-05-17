@@ -7,7 +7,7 @@ def call(env)
 
   if time < Time.parse('12:00:00')
     resp.write "Good Morning"
-  elsif Time.parse('12:00:00') < time < Time.parse('24:00:00')
+  elsif Time.parse('12:00:00') < time
     resp.write "Good Afternoon"
   end
   resp.finish
